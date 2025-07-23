@@ -7,7 +7,7 @@ const Home = () => {
 
   const callApi = async () => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/stations`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/stations`);
       const data = await response.json();
       setApiResult(data);
     } catch (error) {

@@ -12,7 +12,7 @@ const Profile = () => {
         setApiResult({ error: 'You are not logged in.' } as any);
         return;
       }
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/me`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/auth/me`, {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
