@@ -22,6 +22,14 @@ const Settings = () => {
       <button onClick={callApi} className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Call API
       </button>
+      <div className="mt-4 flex justify-center space-x-4">
+        <a href="/sample.pdf" download className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Download Sample PDF
+        </a>
+        <a href="/sample.csv" download className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+          Download CSV Format
+        </a>
+      </div>
       {apiResult && (
         <div className="mt-4 p-4 border rounded w-full max-w-4xl mx-auto text-left">
           <h2 className="text-xl font-semibold">API Result</h2>
