@@ -53,7 +53,7 @@ const Profile = () => {
         setLoading(true);
         setError(null);
         try {
-          const response = await fetch('/api/v1/auth/me', {
+          const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/auth/me`, {
             headers: {
               'Authorization': `Bearer ${authData.accessToken}`,
             },
